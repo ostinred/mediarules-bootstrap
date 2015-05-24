@@ -1,0 +1,157 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+  color: #111;
+  text-transform: uppercase;
+}
+b {
+  color: black;
+}
+div {
+  margin-top: 100px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666;
+}
+header {
+  background: lightsteelblue;
+}
+@media screen and (min-width: 480px) {
+  header {
+    background: lightseagreen;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    background: lightsalmon;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    background: lightgoldenrodyellow;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    background: white;
+  }
+}
+.less-mobile {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .less-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .less-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .less-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .less-mobile {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}
+.small {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .small {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .small {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .small {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .small {
+    display: none;
+  }
+}
+.medium {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .medium {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .medium {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .medium {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .medium {
+    display: none;
+  }
+}
+.large {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .large {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .large {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .large {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .large {
+    display: block;
+  }
+}

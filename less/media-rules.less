@@ -1,0 +1,32 @@
+
+//if you already use source of Twitter Bootstrap please delete this import
+// if not -> use TB breakpoints or set your own
+@import "bootstrap-variables.less";
+
+// min-width extra small screen / phone
+.xs(@rules) {
+  @media screen and (min-width: @screen-xs){
+    @rules();
+  }
+}
+
+// min-width small screen / tablets
+.sm(@rules) {
+  @media screen and (min-width: @screen-sm){
+    @rules();
+  }
+}
+
+// min-width medium screen / desktop
+.md(@rules) {
+  @media screen and (min-width: @screen-md) {
+    @rules();
+  }
+}
+
+// min-width large screen / wide desktop
+.lg(@rules) {
+  @media screen and (min-width: @screen-lg){
+    @rules();
+  }
+}

@@ -1,7 +1,11 @@
 
 //if you already use source of Twitter Bootstrap please delete this import
-// if not -> use TB breakpoints or set your own
+//if not -> use TB breakpoints or set your own
 @import "bootstrap-variables.less";
+
+
+//Mobile first
+//**All media-queries -> min-width
 
 // min-width extra small screen / phone
 .xs(@rules) {
@@ -27,6 +31,58 @@
 // min-width large screen / wide desktop
 .lg(@rules) {
   @media screen and (min-width: @screen-lg){
+    @rules();
+  }
+}
+
+//Mobile first invert
+//**All media-queries -> max-width
+
+// max-width extra small screen / phone
+.max-xs(@rules) {
+  @media screen and (max-width: @screen-xs){
+    @rules();
+  }
+}
+
+// max-width small screen / tablets
+.max-sm(@rules) {
+  @media screen and (max-width: @screen-sm){
+    @rules();
+  }
+}
+
+// max-width medium screen / desktop
+.max-md(@rules) {
+  @media screen and (max-width: @screen-md) {
+    @rules();
+  }
+}
+
+// max-width large screen / wide desktop
+.max-lg(@rules) {
+  @media screen and (max-width: @screen-lg){
+    @rules();
+  }
+}
+
+//In-between media-queries
+//**All media-rules -> min-width - max-width
+
+.xs-sm(@rules) {
+  @media (min-width: @screen-xs) and (max-width: @screen-sm){
+    @rules();
+  }
+}
+
+.sm-md(@rules) {
+  @media (min-width: @screen-sm) and (max-width: @screen-md){
+    @rules();
+  }
+}
+
+.md-lg(@rules) {
+  @media (min-width: @screen-md) and (max-width: @screen-lg){
     @rules();
   }
 }

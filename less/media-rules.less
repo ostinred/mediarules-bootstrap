@@ -35,6 +35,12 @@
   }
 }
 
+// min-width large screen / wide desktop
+.xl(@rules) {
+  @media screen and (min-width: @screen-xl){
+    @rules();
+  }
+}
 //Mobile first invert
 //**All media-queries -> max-width
 
@@ -68,6 +74,7 @@
 
 //In-between media-queries
 //**All media-rules -> min-width - max-width
+// in order
 
 .xs-sm(@rules) {
   @media (min-width: @screen-xs) and (max-width: @screen-sm){
@@ -83,6 +90,46 @@
 
 .md-lg(@rules) {
   @media (min-width: @screen-md) and (max-width: @screen-lg){
+    @rules();
+  }
+}
+
+//variantly
+.xs-md(@rules) {
+  @media (min-width: @screen-xs) and (max-width: @screen-md){
+    @rules();
+  }
+}
+
+.xs-lg(@rules) {
+  @media (min-width: @screen-xs) and (max-width: @screen-lg){
+    @rules();
+  }
+}
+
+.sm-lg(@rules) {
+  @media (min-width: @screen-sm) and (max-width: @screen-lg){
+    @rules();
+  }
+}
+
+//sm -1px
+.max-sm-pre(@rules){
+  @media screen and (max-width: @screen-xs-max){
+    @rules();
+  }
+}
+
+//md -1px
+.max-md-pre(@rules){
+  @media screen and (max-width: @screen-sm-max){
+    @rules();
+  }
+}
+
+//lg -1px
+.max-lg-pre(@rules){
+  @media screen and (max-width: @screen-md-max){
     @rules();
   }
 }

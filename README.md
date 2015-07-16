@@ -2,6 +2,12 @@
 Mixins for comforatble using media rules (using Twitter Bootstrap's less variables)<br>
 Mobile first oriented
 
+## Bower install
+
+```
+$ bower install mediarules-bootstrap
+```
+
 <h3>What it is</h3>
 
 This is a little kit for comfortable using media rules. It is specifically targeted to Mobile first.<br>
